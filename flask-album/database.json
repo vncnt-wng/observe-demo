@@ -1,0 +1,115 @@
+[
+    {
+        "name": "You must believe in Summer",
+        "id": 1,
+        "artists": [
+            "Will Erans"
+        ]
+    },
+    {
+        "name": "Plain stripes and starlight",
+        "id": 2,
+        "artists": [
+            "Will Erans"
+        ]
+    },
+    {
+        "name": "Kind of Green",
+        "id": 3,
+        "artists": [
+            "Kilo Davies"
+        ]
+    },
+    {
+        "name": "Sobbin' with the Kilo Davies Quartet",
+        "id": 4,
+        "artists": [
+            "Kilo Davies"
+        ]
+    },
+    {
+        "name": "The birth of the pool",
+        "id": 5,
+        "artists": [
+            "Kilo Davies"
+        ]
+    },
+    {
+        "name": "A hate divine",
+        "id": 6,
+        "artists": [
+            "James Steamcar"
+        ]
+    },
+    {
+        "name": "James Steamcar and Jim Lungman",
+        "id": 7,
+        "artists": [
+            "James Steamcar",
+            "Jim Lungman"
+        ]
+    },
+    {
+        "name": "My least favouite things",
+        "id": 8,
+        "artists": [
+            "James Steamcar"
+        ]
+    },
+    {
+        "name": "Jacob Pasture",
+        "id": 9,
+        "artists": [
+            "Jacob Pasture"
+        ]
+    },
+    {
+        "name": "A few takes on a promise",
+        "id": 10,
+        "artists": [
+            "Jacob Pasture"
+        ]
+    },
+    {
+        "name": "Skycrafter",
+        "id": 11,
+        "artists": [
+            "Ray RedBush"
+        ]
+    },
+    {
+        "name": "Softgroove",
+        "id": 12,
+        "artists": [
+            "Ray RedBush"
+        ]
+    },
+    {
+        "name": "This",
+        "id": 13,
+        "artists": [
+            "Cannibal Subtract"
+        ]
+    },
+    {
+        "name": "Mind and matter",
+        "id": 14,
+        "artists": [
+            "Frederik Hubert"
+        ]
+    },
+    {
+        "name": "(Almost) Vi's favourite things",
+        "id": 15,
+        "artists": [
+            "Will Erans",
+            "Kilo Davies",
+            "James Steamcar",
+            "Jim Lungman",
+            "Jacob Pasture",
+            "Ray RedBush",
+            "Cannibal Subtract",
+            "Frederik Hubert"
+        ]
+    }
+]
