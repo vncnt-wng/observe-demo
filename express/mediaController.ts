@@ -24,8 +24,8 @@ const collectorOptions = {
     url: "http://127.0.0.1:8000/v1/traces"
 }
 
-const exporter = new ConsoleSpanExporter()
-// const exporter = new OTLPTraceExporter(collectorOptions) //ConsoleSpanExporter();
+// const exporter = new ConsoleSpanExporter()
+const exporter = new OTLPTraceExporter(collectorOptions) //ConsoleSpanExporter();
 const processor = new BatchSpanProcessor(exporter);
 provider.addSpanProcessor(processor);
 

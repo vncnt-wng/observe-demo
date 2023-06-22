@@ -71,36 +71,8 @@
         ]
     },
     {
-        "name": "Skycrafter",
+        "name": "Almost Vi's favourite things (Compilation Album)",
         "id": 11,
-        "artists": [
-            "Ray RedBush"
-        ]
-    },
-    {
-        "name": "Softgroove",
-        "id": 12,
-        "artists": [
-            "Ray RedBush"
-        ]
-    },
-    {
-        "name": "This",
-        "id": 13,
-        "artists": [
-            "Cannibal Subtract"
-        ]
-    },
-    {
-        "name": "Mind and matter",
-        "id": 14,
-        "artists": [
-            "Frederik Hubert"
-        ]
-    },
-    {
-        "name": "(Almost) Vi's favourite things",
-        "id": 15,
         "artists": [
             "Will Erans",
             "Kilo Davies",
@@ -109,6 +81,34 @@
             "Jacob Pasture",
             "Ray RedBush",
             "Cannibal Subtract",
+            "Frederik Hubert"
+        ]
+    },
+    {
+        "name": "Skycrafter",
+        "id": 12,
+        "artists": [
+            "Ray RedBush"
+        ]
+    },
+    {
+        "name": "Softgroove",
+        "id": 13,
+        "artists": [
+            "Ray RedBush"
+        ]
+    },
+    {
+        "name": "This",
+        "id": 14,
+        "artists": [
+            "Cannibal Subtract"
+        ]
+    },
+    {
+        "name": "Mind and matter",
+        "id": 15,
+        "artists": [
             "Frederik Hubert"
         ]
     }

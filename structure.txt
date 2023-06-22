@@ -1,0 +1,14 @@
+            flask (entry)
+                /   \
+               /     \
+              /       \
+             /         \
+            /           \
+           /             \
+          /               \
+         /                 \
+        /                   \
+       /                     \
+flask (albums)              express (media)
+ - get artists on album       - get thumbnails  
+ - get albums by artist

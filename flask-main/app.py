@@ -16,7 +16,6 @@ MEDIA_ENDPOINT = "http://127.0.0.1:3001"
 @app.route("/get_other_albums_from_artists", methods=["POST"])
 @trace_function
 def get_other_albums_from_artists():
-    print(request.data)
     body = json.loads(request.data)
     albumId = body["albumId"]
     trace_headers = add_trace_headers({})
@@ -28,7 +27,6 @@ def get_other_albums_from_artists():
         headers=trace_headers,
         json={"albumId": albumId},
     ).json()
-    print(artists)
 
     for artist in artists:
         albums = requests.post(
@@ -36,16 +34,14 @@ def get_other_albums_from_artists():
             headers=trace_headers,
             json={"artistName": artist},
         ).json()
-        print(albums)
+
         ids = [album["id"] for album in albums]
-        print(ids)
-        r = requests.post(
+
+        thumbnails = requests.post(
             MEDIA_ENDPOINT + "/get_thumbnails_for_albums",
             headers=trace_headers,
             json={"albumIds": ids},
-        )
-        print(r)
-        thumbnails = r.json()
+        ).json()
         album_data_by_artist[artist] = {"albums": albums, "thumbnails": thumbnails}
 
     return album_data_by_artist

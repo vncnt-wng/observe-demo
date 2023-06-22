@@ -13,13 +13,14 @@ class AlbumsManager:
 
     @trace_function
     def get_artists_on_album(self, albumId: int):
-        sleep(randint(30, 50) / 1000)
-        return self.data[albumId - 1]["artists"]
+        artists = self.data[albumId - 1]["artists"]
+        sleep((randint(5, 10) * len(artists)) / 1000)
+        return artists
 
     @trace_function
     def get_albums_by_artist(self, artist_name):
         albums = []
-        sleep(randint(50, 75) / 1000)
+        sleep(randint(15, 20) / 1000)
         for album in self.data:
             if artist_name in album["artists"]:
                 albums.append(album)

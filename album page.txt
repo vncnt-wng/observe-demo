@@ -1,0 +1,17 @@
+ALBUM PAGE -------------- 
+
+{Album Title}
+
+{Cover art} 
+
+{Artists on the album - artist1, artist2 etc} 
+
+
+"More from artists on the album"
+
+{For each artist}
+    {For every other album they have worked on}
+        {album} {thumbnail}
+
+
+        
