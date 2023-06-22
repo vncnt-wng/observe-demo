@@ -1,7 +1,7 @@
 from flask import Flask, request
 from time import sleep
 from opentelemetry.trace.status import StatusCode
-from trace_utils import trace_function, trace, add_trace_headers
+from trace_utils import trace_function, trace, get_trace_context_headers
 from albums_manager import AlbumsManager
 import json
 

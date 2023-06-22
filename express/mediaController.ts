@@ -11,7 +11,7 @@ import { NodeSDK } from '@opentelemetry/sdk-node';
 
 import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-proto';
 
-import { traceFunction, traceFunctionMiddleWare, traceFunctionCallback, getTraceStateHeader, setCorrectFileForMiddlewareSpan } from './trace_utils';
+import { traceFunction, traceFunctionMiddleWare, traceFunctionCallback, getTraceContextHeaders, setCorrectFileForMiddlewareSpan } from './trace_utils';
 import { MediaManager } from './mediaManager';
 
 
@@ -72,7 +72,7 @@ app.use(traceFunctionMiddleWare)
 
 app.post('/get_all_data_for_album_page', async (req, res) => {
     setCorrectFileForMiddlewareSpan("express/app.ts")
-    const traceHeaders = getTraceStateHeader()
+    const traceHeaders = getTraceContextHeaders()
     // console.log(traceHeaders)
     const albumId = req.body.albumId
     // console.log(req)

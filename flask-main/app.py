@@ -1,6 +1,6 @@
 from flask import Flask, request
 from opentelemetry.trace.status import StatusCode
-from trace_utils import trace_function, trace, add_trace_headers
+from trace_utils import trace_function, trace, get_trace_context_headers
 import json
 import requests
 
@@ -18,7 +18,7 @@ MEDIA_ENDPOINT = "http://127.0.0.1:3001"
 def get_other_albums_from_artists():
     body = json.loads(request.data)
     albumId = body["albumId"]
-    trace_headers = add_trace_headers({})
+    trace_headers = get_trace_context_headers({})
 
     album_data_by_artist = {}
 

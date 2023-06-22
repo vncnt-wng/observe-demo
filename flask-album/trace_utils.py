@@ -189,7 +189,7 @@ def trace_function(func):
 
 
 # Adds trace headers to a header dictionary
-def add_trace_headers(headers: Dict):
+def get_trace_context_headers(headers: Dict):
     carrier = {}
     TraceContextTextMapPropagator().inject(carrier)
     # For W3c trace context convention

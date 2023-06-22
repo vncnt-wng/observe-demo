@@ -163,7 +163,7 @@ export const traceFunctionCallback = (name: string, callback: Function) => {
 }
 
 
-export const getTraceStateHeader = () => {
+export const getTraceContextHeaders = () => {
     const output = {}
     propagation.inject(context.active(), output);
     // not necessary, we flag children - trace.getActiveSpan().setAttribute("childInOtherService", true)
